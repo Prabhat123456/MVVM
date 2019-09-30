@@ -1,2 +1,2 @@
 # MVVM
-This is an sample project to describe How to use MVVM Model without using RXSwift and RxCocoa. The project converts one currency with exchange rate of another currency. So basically this is a currency converter app that used Coredata and MVVM
+This is an sample project to describe How to use MVVM Model without using RXSwift and RxCocoa. The project converts one currency with exchange rate of another currency. So basically this is a currency converter app that used Coredata and MVVM. I have kept the URL of API as empty due to security and privacy constriant but if one has to use just insert Api URL in constant -> URL and form url with the help of URLBuilder. Rest is JSON Parsing and your app is ready. It strictly follows the MVVM with completion handler
