@@ -9,7 +9,7 @@
 import Foundation
 
 struct Constants {
-    static let EndPoint = "https://europe-west1-revolut-230009.cloudfunctions.net/revolut-ios"
+    static let EndPoint = ""
     static let JsonFileName = "currencies"
     static let JsonFileType = "json"
     static let DBName = "Revolut"
