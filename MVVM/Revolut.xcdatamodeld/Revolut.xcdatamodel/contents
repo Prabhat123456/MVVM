@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="FromAndToCurrencyMapper" representedClassName="FromAndToCurrencyMapper" syncable="YES">
+    <entity name="FromAndToCurrencyMapper" representedClassName="FromAndToCurrencyMapper" syncable="YES" codeGenerationType="class">
         <attribute name="fromAndToCurrencySymbol" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fromCurrency" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="toCurrency" optional="YES" attributeType="Transformable" syncable="YES"/>

@@ -41,9 +41,7 @@ class DashboardViewController: UIViewController {
             guard let weakSelf = self else { return }
             weakSelf.alert = UIAlertController(title: "Message", message:value, preferredStyle: .alert)
             weakSelf.alert?.addAction(UIAlertAction(title: "OK", style: .cancel) { _ in })
-            if let alert = weakSelf.alert{
-                weakSelf.present(alert, animated: true, completion:nil)
-            }
+            
         }
     }
     

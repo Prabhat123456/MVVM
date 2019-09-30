@@ -39,12 +39,12 @@ class DBOperation {
     
     
     func fetchData(forTheEntity entity:String,completion: @escaping (([Any]?)->())) {
-        let context = persistentContainer.viewContext
-        context.perform {
+        DispatchQueue.main.async { [weak self] in
+            let context = self?.persistentContainer.viewContext
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
             request.returnsObjectsAsFaults = false
             do {
-                let result = try context.fetch(request)
+                let result = try context?.fetch(request)
                 completion(result)
             } catch {
                 completion(nil)

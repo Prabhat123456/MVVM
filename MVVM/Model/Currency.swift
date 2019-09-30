@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Currency: NSObject,NSCoding {
+class Currency: NSObject,NSCoding {
     var symbol: String?
     var country: String?
     var flagImage: String?

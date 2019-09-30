@@ -65,10 +65,8 @@ class DashBoardVM: DashBoardVMProtocol {
                                 }
                             })
                         }else{
-                            DispatchQueue.main.async {
-                                weakSelf.cancelDispatchTimer()
-                                weakSelf.showAlertMessage?("Internet Not Available")
-                            }
+                            weakSelf.cancelDispatchTimer()
+                            weakSelf.showAlertMessage?("Internet Not Available")
                         }
                        
                     }
@@ -97,8 +95,8 @@ class DashBoardVM: DashBoardVMProtocol {
             getFromToKeySymbol(exchangeRateModel: item) { [weak self] (exchangeRate) in
                 guard let weakSelf = self else { return }
                 
-                if let fromCurrency = exchangeRate?.fromCurrency,
-                   let toCurrency = exchangeRate?.toCurrency,
+                if let fromCurrency = exchangeRate?.fromCurrency as? Currency,
+                   let toCurrency = exchangeRate?.toCurrency as? Currency,
                    let fromCountry = fromCurrency.country,
                    let fromSymbol = fromCurrency.symbol,
                    let toSymbol = toCurrency.symbol,

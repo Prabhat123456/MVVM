@@ -76,7 +76,7 @@ class FromCurrencyVM: NSObject, FromCurrencyVMModel{
             var forCurrency = [String]()
             if let recordsItem = records as? [FromAndToCurrencyMapper]{
                 for item in recordsItem{
-                    if let country = (item.fromCurrency)?.country{
+                    if let country = (item.fromCurrency as? Currency)?.country{
                       forCurrency.append(country)
                     }
                 }

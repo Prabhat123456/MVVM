@@ -20,7 +20,7 @@ class ToCurrencyVM: FromCurrencyVM,FromCurrencySelectedProtocol {
     
     func getPreviousConvertedCurrency(){
         dbOperation.fetchData(forTheEntity: Constants.DBCurrencyMapperTable) { [weak self] (records) in
-            self?.fromAndToCurrencyMapper = (records as? [FromAndToCurrencyMapper])?.filter({($0.fromCurrency)?.country == self?.selectedCurrency?.country})
+            self?.fromAndToCurrencyMapper = (records as? [FromAndToCurrencyMapper])?.filter({($0.fromCurrency as? Currency)?.country == self?.selectedCurrency?.country})
         }
     }
     
@@ -34,7 +34,7 @@ class ToCurrencyVM: FromCurrencyVM,FromCurrencySelectedProtocol {
 extension ToCurrencyVM {
     @objc override func cellModel(at indexPath: IndexPath) -> Currency {
         let model = currency[indexPath.row]
-        let value = fromAndToCurrencyMapper?.first{ ($0.toCurrency)?.country == model.country}
+        let value = fromAndToCurrencyMapper?.first{ ($0.toCurrency as? Currency)?.country == model.country}
         model.isDisabled = false
         if(model.country == selectedCurrency?.country ||  value != nil){
             model.isDisabled = true

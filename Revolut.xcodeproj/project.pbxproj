@@ -45,8 +45,6 @@
 		5076DAF9233AB58A006DB070 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076DAF8233AB58A006DB070 /* MockAPIClient.swift */; };
 		5076DAFB233ABCF2006DB070 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076DAFA233ABCF2006DB070 /* ExchangeRateTests.swift */; };
 		5076DAFD233ABD55006DB070 /* DashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076DAFC233ABD55006DB070 /* DashboardTests.swift */; };
-		50D4DB4D2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4DB4B2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataClass.swift */; };
-		50D4DB4E2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4DB4C2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +109,6 @@
 		5076DAF8233AB58A006DB070 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		5076DAFA233ABCF2006DB070 /* ExchangeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTests.swift; sourceTree = "<group>"; };
 		5076DAFC233ABD55006DB070 /* DashboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTests.swift; sourceTree = "<group>"; };
-		50D4DB4B2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FromAndToCurrencyMapper+CoreDataClass.swift"; sourceTree = "<group>"; };
-		50D4DB4C2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FromAndToCurrencyMapper+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +139,9 @@
 		5076DA72233A580F006DB070 = {
 			isa = PBXGroup;
 			children = (
-				5076DA7D233A580F006DB070 /* Revolut */,
-				5076DA95233A5811006DB070 /* RevolutTests */,
-				5076DAA0233A5811006DB070 /* RevolutUITests */,
+				5076DA7D233A580F006DB070 /* MVVM */,
+				5076DA95233A5811006DB070 /* MVVMTests */,
+				5076DAA0233A5811006DB070 /* MVVMUITests */,
 				5076DA7C233A580F006DB070 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -160,7 +156,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5076DA7D233A580F006DB070 /* Revolut */ = {
+		5076DA7D233A580F006DB070 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				5076DAF1233AA951006DB070 /* Extensions */,
@@ -176,10 +172,10 @@
 				5076DA8D233A5811006DB070 /* Info.plist */,
 				5076DA85233A580F006DB070 /* Revolut.xcdatamodeld */,
 			);
-			path = Revolut;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
-		5076DA95233A5811006DB070 /* RevolutTests */ = {
+		5076DA95233A5811006DB070 /* MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
 				5076DAB5233A590D006DB070 /* MockClasses */,
@@ -189,16 +185,16 @@
 				5076DAAF233A5823006DB070 /* ModelTests */,
 				5076DA98233A5811006DB070 /* Info.plist */,
 			);
-			path = RevolutTests;
+			path = MVVMTests;
 			sourceTree = "<group>";
 		};
-		5076DAA0233A5811006DB070 /* RevolutUITests */ = {
+		5076DAA0233A5811006DB070 /* MVVMUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5076DAA1233A5811006DB070 /* RevolutUITests.swift */,
 				5076DAA3233A5811006DB070 /* Info.plist */,
 			);
-			path = RevolutUITests;
+			path = MVVMUITests;
 			sourceTree = "<group>";
 		};
 		5076DAAF233A5823006DB070 /* ModelTests */ = {
@@ -260,8 +256,6 @@
 		5076DABD233A5D99006DB070 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				50D4DB4B2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataClass.swift */,
-				50D4DB4C2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataProperties.swift */,
 				5076DABE233A5DA9006DB070 /* Currency.swift */,
 				5076DACC233A7B12006DB070 /* ExchangeRate.swift */,
 				5076DADC233A8277006DB070 /* Dashboard.swift */,
@@ -469,7 +463,6 @@
 				5076DAEA233A902B006DB070 /* ToCurrencyListViewController.swift in Sources */,
 				5076DAEE233AA8BB006DB070 /* CurrencyViewCell.swift in Sources */,
 				5076DAF4233AA962006DB070 /* UITableViewCell+Extension.swift in Sources */,
-				50D4DB4E2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataProperties.swift in Sources */,
 				5076DADF233A82D0006DB070 /* FromCurrencyVM.swift in Sources */,
 				5076DA87233A580F006DB070 /* Revolut.xcdatamodeld in Sources */,
 				5076DACB233A694A006DB070 /* APIClient.swift in Sources */,
@@ -479,7 +472,6 @@
 				5076DABA233A5A44006DB070 /* DBOperation.swift in Sources */,
 				5076DAF5233AA962006DB070 /* NSObject+Extension.swift in Sources */,
 				5076DAE8233A901B006DB070 /* FromCurrencyListViewController.swift in Sources */,
-				50D4DB4D2342110C00B6E5FE /* FromAndToCurrencyMapper+CoreDataClass.swift in Sources */,
 				5076DACD233A7B12006DB070 /* ExchangeRate.swift in Sources */,
 				5076DAC6233A687A006DB070 /* URLBuilder.swift in Sources */,
 				5076DAEC233A9039006DB070 /* DashboardViewController.swift in Sources */,
@@ -671,7 +663,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YY4NV42A9;
-				INFOPLIST_FILE = Revolut/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -689,7 +681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7YY4NV42A9;
-				INFOPLIST_FILE = Revolut/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,7 +700,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RevolutTests/Info.plist;
+				INFOPLIST_FILE = MVVMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -730,7 +722,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RevolutTests/Info.plist;
+				INFOPLIST_FILE = MVVMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -749,7 +741,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RevolutUITests/Info.plist;
+				INFOPLIST_FILE = MVVMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,7 +760,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RevolutUITests/Info.plist;
+				INFOPLIST_FILE = MVVMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
